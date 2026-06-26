@@ -1,15 +1,14 @@
 
+import org.testng.annotations.Test;
+
 import pcloginalert.TelegramAlert;
 import pcloginalert.Utils;
 import pcloginalert.WebcamCapture;
 
 public class CaptureAndSendTelegramAlert {
-
-    public static void main(String[] args) {
-        captureAndSendAlert();
-    }
-
-    public static void captureAndSendAlert() {
+    
+    @Test
+     void captureAndSendAlert() {
 
         Utils.writeToLog("Starting PC Login Alert...");
 
